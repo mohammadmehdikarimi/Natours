@@ -1,4 +1,5 @@
 .btn {
+
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -14,6 +15,7 @@
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
@@ -31,6 +33,15 @@
 
     &::after {
       background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
     }
   }
 
@@ -53,6 +64,7 @@
 }
 
 .btn-text {
+
   &:link,
   &:visited {
     font-size: $default-font-size;
